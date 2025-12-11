@@ -24,7 +24,7 @@ export class SeedService {
     data.results.forEach(({ name, url }) => {
       const segments = url.split('/');
       const no = +segments[segments.length - 2];
-      console.log({ name, no });
+      // console.log({ name, no });
       pokemons.push({ name, no });
     });
     // await this.pokemonService.createAll(pokemons);
